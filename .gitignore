@@ -2,8 +2,14 @@
 .vscode/*
 src/i3dr/*
 src/isi/*
+*.catkin_workspace
 build/*
 devel/*
 logs/*
 .catkin_tools/*
 Examples/*
+src/.rosinstall
+src/.rosinstall.bak
+src/CMakeLists.txt
+.rosinstall
+.rosinstall.bak

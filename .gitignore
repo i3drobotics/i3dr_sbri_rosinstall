@@ -1,0 +1,9 @@
+*.code-workspace
+.vscode/*
+src/i3dr/*
+src/isi/*
+build/*
+devel/*
+logs/*
+.catkin_tools/*
+Examples/*

@@ -2,7 +2,9 @@
 
 ROS Workspace for SBRI project
 
-## WARNING Repositor is still being setup. Please check back later
+Refer to README in i3dr_sbri for usage of i3dr cameras for SBRI project
+
+Refer to README in isi_base for usage of isi hes probe for SBRI project
 
 ## Install
 

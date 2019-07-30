@@ -1,11 +1,13 @@
 # main repos
 - git: {local-name: i3dr/universal_robot, uri: 'https://github.com/ros-industrial/universal_robot.git', version: kinetic-devel}
 
+- git: {local-name: i3dr/ur_modern_driver, uri: 'https://github.com/ros-industrial/ur_modern_driver.git', version: kinetic-devel}
+
 - git: {local-name: i3dr/image_pipeline, uri: 'https://github.com/i3drobotics/image_pipeline', version: master}
 
 - git: {local-name: i3dr/gscam, uri: 'https://github.com/i3drobotics/gscam.git', version: master}
 
-- git: {local-name: i3dr/pylon_camera, uri: 'https://github.com/magazino/pylon_camera.git', version: indigo-devel}
+- git: {local-name: i3dr/pylon_camera, uri: 'https://github.com/i3drobotics/pylon_camera.git', version: indigo-devel}
 
 - git: {local-name: i3dr/camera_control_msgs, uri: 'https://github.com/magazino/camera_control_msgs.git', version: indigo-devel}
 

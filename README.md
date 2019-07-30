@@ -33,6 +33,7 @@ We will provide a license file that must be placed in the folder:
 ### Catkin Build
 
 ``` bash
+cd /path/to/repo
 catkin_make
 ```
 
@@ -43,3 +44,20 @@ To build with the I3DR stereo algorithm use the following command:
 ``` bash
 catkin_make -DENABLE_I3DR_ALG=ON
 ```
+
+## Run
+
+## Source workspace
+
+``` bash
+cd /path/to/repo
+source devel/setup.sh
+```
+
+## i3dr packages
+
+See /i3dr/i3dr_sbri/README.md for details on running i3dr SBRI packages
+
+## isi packages
+
+See /isi/isi_hes_base/README.md for details on running isi SBRI packages

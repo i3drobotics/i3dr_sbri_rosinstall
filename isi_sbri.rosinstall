@@ -1,3 +1,4 @@
 # main repos
 - git: {local-name: isi/isi_hes_driver, uri: 'https://github.com/i3drobotics/isi_hes_driver-ros.git', version: master}
 - git: {local-name: isi/isi_hes_base, uri: 'https://github.com/i3drobotics/isi_hes_base-ros.git', version: master}
+- git: {local-name: isi/isi_hes_msgs, uri: 'https://github.com/i3drobotics/isi_hes_msgs-ros.git', version: master}

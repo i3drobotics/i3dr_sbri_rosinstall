@@ -6,15 +6,16 @@ Refer to README in i3dr_sbri for usage of i3dr cameras for SBRI project
 
 Refer to README in isi_base for usage of isi hes probe for SBRI project
 
-## Install
+## Install (There is no need to clone the repository)
 
 ### rosinstall
 
 ``` bash
 cd /path/to/repo
 wstool init src
-wstool merge -t src i3dr_sbri.rosinstall
-wstool merge -t src isi_sbri.rosinstall
+wstool merge -t src https://raw.githubusercontent.com/i3drobotics/i3dr_sbri_rosinstall/master/i3dr_sbri.rosinstall
+wstool merge -t src https://raw.githubusercontent.com/i3drobotics/i3dr_sbri_rosinstall/master/i3dr_ur.rosinstall
+wstool merge -t src https://raw.githubusercontent.com/i3drobotics/i3dr_sbri_rosinstall/master/isi_sbri.rosinstall
 wstool update -t src
 ```
 

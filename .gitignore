@@ -6,3 +6,4 @@ devel/*
 src/*
 logs/*
 .catkin_tools/*
+!.vscode/tasks.json

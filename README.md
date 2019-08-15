@@ -6,6 +6,8 @@ Refer to README in i3dr_sbri for usage of i3dr cameras for SBRI project
 
 Refer to README in isi_base for usage of isi hes probe for SBRI project
 
+See repository wiki for in-depth install and run instructions
+
 ## Install (There is no need to clone the repository)
 
 ### rosinstall

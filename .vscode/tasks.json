@@ -4,103 +4,44 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "wstool merge i3dr",
+            "label": "prerun",
             "type": "shell",
-            "command": "wstool",
-            "args": [
-                "merge",
-                "-t",
-                "src",
-                "https://raw.githubusercontent.com/i3drobotics/i3dr_sbri_rosinstall/master/i3dr_sbri.rosinstall",
-            ],
+            "command": "source devel/setup.bash && export ROS_MASTER_URI=http://i3drL005:11311/",
             "options": {
-                "cwd": "${workspaceRoot}"
-            },
-            "problemMatcher": []
+                "cwd": "${workspaceFolder}"
+            }
         },
         {
-            "label": "wstool merge isi",
+            "label": "build_with_I3DR",
             "type": "shell",
-            "command": "wstool",
-            "args": [
-                "merge",
-                "-t",
-                "src",
-                "https://raw.githubusercontent.com/i3drobotics/i3dr_sbri_rosinstall/master/isi_sbri.rosinstall",
-            ],
-            "options": {
-                "cwd": "${workspaceRoot}"
-            },
-            "problemMatcher": []
-        },
-        {
-            "label": "wstool merge ur",
-            "type": "shell",
-            "command": "wstool",
-            "args": [
-                "merge",
-                "-t",
-                "src",
-                "https://raw.githubusercontent.com/i3drobotics/i3dr_sbri_rosinstall/blob/master/i3dr_ur.rosinstall",
-            ],
-            "options": {
-                "cwd": "${workspaceRoot}"
-            },
-            "problemMatcher": []
-        },
-        {
-            "label": "wstool update",
-            "type": "shell",
-            "command": "wstool",
-            "args": [
-                "update",
-                "-t",
-                "src",
-            ],
-            "options": {
-                "cwd": "${workspaceRoot}"
-            },
-            "problemMatcher": [],
-            "dependsOn":["wstool merge ur","wstool merge isi","wstool merge i3dr"]
-        },
-        {
-            "label": "build workspace",
-            "type": "shell",
-            "command": "catkin_make",
-            "args": [
-                "-DGSTREAMER_VERSION_1_x=On",
-                "-DENABLE_I3DR_ALG=OFF",
-            ],
+            "command": "catkin config --extend /opt/ros/kinetic && catkin_make -DCMAKE_BUILD_TYPE=Debug -DENABLE_I3DR_ALG=ON -j4",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "options": {
-                "cwd": "${workspaceRoot}"
-            },
-            "problemMatcher": [],
-            "dependsOn":["source ros", "source workspace"]
+            "problemMatcher": []
         },
         {
-            "label": "source ros",
+            "label": "build_without_I3DR",
             "type": "shell",
-            "command": "source",
-            "args": [
-                "/opt/ros/kinetic/setup.bash",
-            ],
-            "problemMatcher": [],
+            "command": "catkin config --extend /opt/ros/kinetic && catkin_make -DCMAKE_BUILD_TYPE=Debug -DENABLE_I3DR_ALG=OFF -j4",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
         },
         {
-            "label": "source workspace",
+            "label": "clean",
             "type": "shell",
-            "command": "source",
-            "args": [
-                "devel/setup.bash",
-            ],
-            "options": {
-                "cwd": "${workspaceRoot}"
-            },
-            "problemMatcher": [],
+            "command": "catkin_make clean",
+            "problemMatcher": []
+        },
+        {
+            "label": "release",
+            "type": "shell",
+            "command": "sudo checkinstall --install=no catkin_make -j4 --cmake--args -DCMAKE_BUILD_TYPE=Release"
         }
     ]
+
 }

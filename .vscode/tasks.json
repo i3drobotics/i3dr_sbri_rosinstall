@@ -14,7 +14,7 @@
         {
             "label": "build_with_I3DR",
             "type": "shell",
-            "command": "catkin config --extend /opt/ros/kinetic && catkin_make -DCMAKE_BUILD_TYPE=Debug -DENABLE_I3DR_ALG=ON -j4",
+            "command": "catkin_make -DCMAKE_BUILD_TYPE=Debug -DENABLE_I3DR_ALG=ON -j4",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -24,7 +24,7 @@
         {
             "label": "build_without_I3DR",
             "type": "shell",
-            "command": "catkin config --extend /opt/ros/kinetic && catkin_make -DCMAKE_BUILD_TYPE=Debug -DENABLE_I3DR_ALG=OFF -j4",
+            "command": "catkin_make -DCMAKE_BUILD_TYPE=Debug -DENABLE_I3DR_ALG=OFF -j4",
             "group": {
                 "kind": "build",
                 "isDefault": true

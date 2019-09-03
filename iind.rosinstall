@@ -1,0 +1,7 @@
+- git: {local-name: iind/iind_core, uri: 'https://iind.visualstudio.com/IIND/_git/iind_core', version: master}
+
+- git: {local-name: iind/octomap_mapping, uri: 'https://iind.visualstudio.com/IIND/_git/octomap_mapping', version: master}
+
+- git: {local-name: iind/iind_mobile, uri: 'https://iind.visualstudio.com/IIND/_git/iind_mobile', version: master}
+
+- git: {local-name: iind/iind_manipulation, uri: 'https://iind.visualstudio.com/IIND/_git/iind_manipulation', version: master}

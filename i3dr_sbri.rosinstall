@@ -20,3 +20,7 @@
 - git: {local-name: i3dr/i3dr_ur10, uri: 'https://github.com/i3drobotics/i3dr_ur10-ros.git', version: master}
 
 - git: {local-name: i3dr/i3dr_sbri, uri: 'https://github.com/i3drobotics/i3dr_sbri-ros.git', version: master}
+
+- git: {local-name: i3dr/rtabmap_ros, uri: 'https://github.com/i3drobotics/rtabmap_ros.git', version: master}
+
+- git: {local-name: i3dr/apriltag_ros, uri: 'https://github.com/AprilRobotics/apriltag_ros.git', version: master}

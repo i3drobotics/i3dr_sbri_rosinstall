@@ -15,9 +15,9 @@ See repository wiki for in-depth install and run instructions
 ``` bash
 cd /path/to/repo
 wstool init src
-wstool merge -t src https://raw.githubusercontent.com/i3drobotics/i3dr_sbri_rosinstall/master/i3dr_sbri.rosinstall
-wstool merge -t src https://raw.githubusercontent.com/i3drobotics/i3dr_sbri_rosinstall/master/i3dr_ur.rosinstall
-wstool merge -t src https://raw.githubusercontent.com/i3drobotics/i3dr_sbri_rosinstall/master/isi_sbri.rosinstall
+wstool merge -t src https://raw.githubusercontent.com/i3drobotics/i3dr_sbri_rosinstall/main/i3dr_sbri.rosinstall
+wstool merge -t src https://raw.githubusercontent.com/i3drobotics/i3dr_sbri_rosinstall/main/i3dr_ur.rosinstall
+wstool merge -t src https://raw.githubusercontent.com/i3drobotics/i3dr_sbri_rosinstall/main/isi_sbri.rosinstall
 wstool update -t src
 ```
 
